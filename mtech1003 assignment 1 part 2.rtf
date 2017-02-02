@@ -1,0 +1,382 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\
+Lab - Navigating the File System\
+==========\
+Follow the instructions line-by-line.  \
+\
+* Type in the commands as is, but ignore the beginning prompt.  \
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  \
+* "No output" or "nothing happens" are valid answers to any of the questions.\
+==========\
+\
+==========\
+1. Open a new terminal window.\
+----------\
+\
+==========\
+2. Create a directory called mtec1003.\
+----------\
+\
+==========\
+3. Change your directory so that you're in mtec1003.\
+----------\
+\
+==========\
+4. Type:\
+\
+$ pwd\
+\
+Check that the output ends with mtec1003 (something like this: /Users/bree/mtec1003).\
+\
+If it doesn't, start at #1 again, or ask for help before moving on!\
+\
+Copy and paste the output of pwd below.\
+----------\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 ent-v314-013:mtec1003 student$ pwd\
+/Users/student/mtec1003
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 ==========\
+5. Type:\
+\
+$ mkdir animals\
+$ ls\
+\
+Copy and paste the output below.\
+----------\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 animals
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 \
+==========\
+6. Type:\
+\
+$ mkdir food\
+$ ls\
+\
+Copy and paste the output below.\
+----------\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 animals	food
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 ==========\
+7. Type:\
+\
+$ mkdir -p foo/bar/baz/qux\
+$ ls\
+\
+Copy and paste the output below.\
+----------\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 animals	foo	food
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 ==========\
+8. Type:\
+\
+$ cd foo/bar/baz/qux\
+$ pwd\
+\
+Copy and paste the output below.\
+----------\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Users/student/mtec1003/foo/bar/baz/qux
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 ==========\
+9. Type:\
+\
+$ cd ../..\
+$ pwd\
+\
+Copy and paste the output below.\
+----------\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Users/student/mtec1003/foo/bar/baz
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 ==========\
+10. Type:\
+\
+$ cd -\
+$ pwd\
+\
+Copy and paste the output below.\
+----------\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 ent-v314-013:baz student$ cd -\
+/Users/student/mtec1003/foo/bar/baz/qux\
+ent-v314-013:qux student$ pwd\
+/Users/student/mtec1003/foo/bar/baz/qux\
+ent-v314-013:qux student$ \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1  \
+==========\
+11. Type:\
+\
+$ cd ../../../..\
+$ pwd\
+\
+Copy and paste the output below.\
+----------\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Users/student/mtec1003
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 ==========\
+12. Type:\
+\
+$ ls -l\
+$ rmdir animals\
+$ ls -l\
+\
+Copy and paste the first two lines from the output into the space below.\
+----------\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 ent-v314-013:mtec1003 student$ ls -1\
+animals\
+foo\
+food\
+ent-v314-013:mtec1003 student$ rmdir animals\
+ent-v314-013:mtec1003 student$ ls -1\
+foo\
+food\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+==========\
+13. Type:\
+\
+$ cd ~\
+$ pwd\
+\
+Copy and paste the output into the space below.\
+----------\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Users/student
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+==========\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 14. Type:\
+\
+$ cd /Volumes\
+$ pwd\
+\
+Copy and paste the output into the space below.\
+----------\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Volumes
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 \
+==========\
+15. Type:\
+\
+$ cd /unknown_folder\
+$ pwd\
+\
+Copy and paste the output into the space below.\
+----------\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 ent-v314-013:Volumes student$ cd /unknown_folder\
+-bash: cd: /unknown_folder: No such file or directory\
+ent-v314-013:Volumes student$ pwd\
+/Volumes\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+==========\
+16. Type:\
+\
+$ cd ~/mtec1003\
+$ pwd\
+\
+Copy and paste the output into the space below.\
+----------\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 /Users/student/mtec1003
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 \
+==========\
+17. Type:\
+\
+$ hostname\
+\
+Copy and paste the output into the space below.\
+----------\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 ent-v314-013.local
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 \
+==========\
+18a. Make sure you're back in your mtec1003, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.\
+----------\
+pwd\
+\
+\
+==========\
+18b. If you're not in the right directory, type the following command:\
+\
+cd ~/mtec1003\
+\
+Otherwise skip this question/step!\
+----------\
+\
+\
+\
+==========\
+19. Create the following directories, with each one inside each other.  The first one, pineapple, is the inner most:\
+\
+pineapple\
+orange\
+strawberry\
+lemon\
+\
+Use only one command to make all of these new directories.  Write what command you used below:\
+----------\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 ent-v314-013:mtec1003 student$ mkdir -p pinapple/orange/strawberry/lemon
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 \
+==========\
+20. Make another directory called aardvark.  \
+\
+Write the command you used to create the directory below:\
+----------\
+\
+mkdir\
+\
+==========\
+21. List the files and directories in the current directory using the long format.  \
+\
+What is the modified date of the aardvark directory?\
+----------\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf2 \cb0 \kerning1\expnd0\expndtw0 \CocoaLigature0 total 0\
+drwxr-xr-x  3 student  staff  102 Jan 30 17:17 foo\
+drwxr-xr-x  2 student  staff   68 Jan 30 17:16 food\
+drwxr-xr-x  3 student  staff  102 Jan 30 17:53 pinapple
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 ==========\
+22. Make 3 directories nested within each other:\
+\
+* foo should be the outermost directory\
+* bar should be the inside foo\
+* baz should be inside bar\
+\
+What command did you use?\
+----------\
+mkdir\
+\
+\
+==========\
+23. Change your directory so that you're in the inner most directory (baz)\
+\
+What command did you use?\
+----------\
+\
+mkdir baz/\
+\
+==========\
+24. Change your directory so that you're two directories up (foo)\
+\
+What command did you use?\
+----------\
+\
+cd\
+==========\
+25. What command is used to delete empty directories?\
+----------\
+rmdir\
+\
+\
+==========\
+26. What command is used to print out your current working directory?\
+----------\
+\
+pwd\
+\
+==========\
+27. What flag do I pass to ls to print out all files?\
+----------\
+\
+pwd -a\
+\
+==========\
+28. What's the shortcut for home directory?\
+----------\
+\
+cd\
+\
+==========\
+29. What's a pathname?\
+----------\
+A pathname is the general form of the name of a file or directory\
+, tells the location in a file system\
+\
+\
+==========\
+30. What's a directory?\
+----------\
+A directory is a cataloging structure on a file system that references other files\
+==========\
+31. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?\
+----------\
+cd /}
